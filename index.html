@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DealZóna – Okos vásárlás, jó ajánlatok</title>
-  <meta name="description" content="DealZóna – Figyelemfelkeltő viszonteladói webshop modern megjelenéssel, keresővel, rendelési űrlappal és ajánlatkérési lehetőséggel." />
+  <meta name="description" content="DealZóna – modern, figyelemfelkeltő termékoldal rendelésre beszerzős modellhez." />
   <meta property="og:title" content="DealZóna – Okos vásárlás, jó ajánlatok" />
-  <meta property="og:description" content="Akciós és népszerű termékek modern, mobilbarát webshopban." />
+  <meta property="og:description" content="Kiemelt ajánlatok, egyszerű rendelés, bizalomépítő megjelenés." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#ff5a1f" />
+  <meta name="theme-color" content="#ff6a21" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
     <div class="wrap nav">
       <a class="brand" href="#fooldal" aria-label="DealZóna főoldal">
         <img src="favicon.svg" alt="DealZóna logó" class="brand-logo" />
-        <span>
+        <span class="brand-text">
           <strong>DealZóna</strong>
           <small>webshop & ajánlatok</small>
         </span>
@@ -35,7 +35,7 @@
         <a href="#kapcsolat">Kapcsolat</a>
       </nav>
 
-      <a class="btn btn-primary btn-small nav-cta" href="#rendeles">Rendelek</a>
+      <a class="btn btn-primary nav-cta" href="#rendeles">Rendelek</a>
     </div>
   </header>
 
@@ -43,9 +43,9 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">🔥 Figyelemfelkeltő webshop induláshoz</div>
+          <span class="tag">🔥 Figyelemfelkeltő webshop induláshoz</span>
           <h1>DealZóna – termékek, amiket könnyű meghirdetni és továbbadni</h1>
-          <p>
+          <p class="hero-text">
             Modern, mobilbarát weboldal rendelésre beszerzős modellhez.
             Tedd fel a termékeket, gyűjts rendeléseket, és add tovább haszonnal.
           </p>
@@ -55,43 +55,37 @@
             <a class="btn btn-secondary" href="#rendeles">Ajánlatkérés</a>
           </div>
 
-          <div class="hero-points">
+          <div class="bullet-row">
             <span>✔ készlet nélkül is indulhatsz</span>
             <span>✔ gyors rendelésfelvétel</span>
             <span>✔ mobilon is jól néz ki</span>
           </div>
         </div>
 
-        <div class="hero-card">
-          <div class="hero-stat">
-            <strong>Akciós termékek</strong>
-            <span>Rendelésre beszerzős modellhez</span>
+        <aside class="hero-panel">
+          <div class="panel-top">
+            <h2>Akciós termékek</h2>
+            <p>Rendelésre beszerzős modellhez</p>
           </div>
+
           <div class="mini-list">
-            <div class="mini-item">
-              <span>LED fejlámpa</span>
-              <b>9 990 Ft</b>
-            </div>
-            <div class="mini-item">
-              <span>Autós telefontartó</span>
-              <b>6 490 Ft</b>
-            </div>
-            <div class="mini-item">
-              <span>Mini kompresszor</span>
-              <b>14 990 Ft</b>
-            </div>
+            <div class="mini-item"><span>LED fejlámpa</span><b>9 990 Ft</b></div>
+            <div class="mini-item"><span>Autós telefontartó</span><b>6 490 Ft</b></div>
+            <div class="mini-item"><span>Mini kompresszor</span><b>14 990 Ft</b></div>
+            <div class="mini-item"><span>Szerszámkészlet</span><b>11 490 Ft</b></div>
           </div>
-          <div class="notice">💡 Tipp: a vevőknek írd ki, hogy a termék rendelésre érkezik 2–5 munkanapon belül.</div>
-        </div>
+
+          <div class="tip-box">💡 Tipp: a vevőknek írd ki, hogy a termék rendelésre érkezik 2–5 munkanapon belül.</div>
+        </aside>
       </div>
     </section>
 
-    <section class="promo-strip">
-      <div class="wrap promo-grid">
-        <div>🚚 Gyors kapcsolatfelvétel</div>
-        <div>💳 Utánvét / utalás megadható</div>
-        <div>📱 Facebook-hirdetéshez is jó alap</div>
-        <div>⭐ Profi, bizalomépítő kinézet</div>
+    <section class="usp-strip">
+      <div class="wrap usp-grid">
+        <div class="usp-card">🚚 Gyors kapcsolatfelvétel</div>
+        <div class="usp-card">💳 Utánvét / utalás megadható</div>
+        <div class="usp-card">📱 Facebook-hirdetéshez is jó alap</div>
+        <div class="usp-card">⭐ Profi, bizalomépítő kinézet</div>
       </div>
     </section>
 
@@ -99,10 +93,10 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <p class="section-label">Termékek</p>
+            <span class="tag small">Termékek</span>
             <h2>Kiemelt ajánlatok</h2>
           </div>
-          <p class="section-text">Minta termékekkel előkészítve. Később bármire átírható: szerszám, autós cucc, háztartás, vegyes termékek.</p>
+          <p>Minta termékekkel előkészítve. Később bármire átírható: szerszám, autós cucc, háztartás, vegyes termékek.</p>
         </div>
 
         <div class="filter-bar">
@@ -112,8 +106,8 @@
 
         <div class="products" id="productList">
           <article class="product-card" data-name="Prémium LED fejlámpa fejlampa munkalampa lámpa">
-            <div class="product-badge">Akció</div>
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=80" alt="LED fejlámpa" />
+            <div class="badge badge-sale">Akció</div>
+            <img src="assets/led-fejlampa.svg" alt="Prémium LED fejlámpa" />
             <div class="product-body">
               <h3>Prémium LED fejlámpa</h3>
               <p>Erős fény, kényelmes viselet, munkához és kiránduláshoz is ideális.</p>
@@ -121,7 +115,7 @@
                 <span class="price">9 990 Ft</span>
                 <span class="old-price">12 990 Ft</span>
               </div>
-              <div class="ship-note">Szállítás: 2–5 munkanap</div>
+              <span class="ship-note">Szállítás: 2–5 munkanap</span>
               <div class="card-actions">
                 <button class="btn btn-primary order-btn" data-product="Prémium LED fejlámpa">Megrendelem</button>
                 <button class="btn btn-secondary quote-btn" data-product="Prémium LED fejlámpa">Ajánlatot kérek</button>
@@ -130,8 +124,8 @@
           </article>
 
           <article class="product-card" data-name="Univerzális autós telefontartó auto autós telefontarto tartó">
-            <div class="product-badge popular">Népszerű</div>
-            <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1000&q=80" alt="Autós telefontartó" />
+            <div class="badge badge-popular">Népszerű</div>
+            <img src="assets/autos-telefontarto.svg" alt="Univerzális autós telefontartó" />
             <div class="product-body">
               <h3>Univerzális autós telefontartó</h3>
               <p>Stabil rögzítés, gyors felhelyezés, szinte bármilyen telefonhoz használható.</p>
@@ -139,7 +133,7 @@
                 <span class="price">6 490 Ft</span>
                 <span class="old-price">8 490 Ft</span>
               </div>
-              <div class="ship-note">Szállítás: 2–5 munkanap</div>
+              <span class="ship-note">Szállítás: 2–5 munkanap</span>
               <div class="card-actions">
                 <button class="btn btn-primary order-btn" data-product="Univerzális autós telefontartó">Megrendelem</button>
                 <button class="btn btn-secondary quote-btn" data-product="Univerzális autós telefontartó">Ajánlatot kérek</button>
@@ -148,8 +142,8 @@
           </article>
 
           <article class="product-card" data-name="Erős mini kompresszor kompresszor auto gumifujó">
-            <div class="product-badge limited">Kevés maradt</div>
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22731f70cf?auto=format&fit=crop&w=1000&q=80" alt="Mini kompresszor" />
+            <div class="badge badge-limited">Kevés maradt</div>
+            <img src="assets/mini-kompresszor.svg" alt="Erős mini kompresszor" />
             <div class="product-body">
               <h3>Erős mini kompresszor</h3>
               <p>Kompakt és praktikus megoldás gumifújáshoz, műhelybe vagy autóba.</p>
@@ -157,7 +151,7 @@
                 <span class="price">14 990 Ft</span>
                 <span class="old-price">18 990 Ft</span>
               </div>
-              <div class="ship-note">Szállítás: 2–5 munkanap</div>
+              <span class="ship-note">Szállítás: 2–5 munkanap</span>
               <div class="card-actions">
                 <button class="btn btn-primary order-btn" data-product="Erős mini kompresszor">Megrendelem</button>
                 <button class="btn btn-secondary quote-btn" data-product="Erős mini kompresszor">Ajánlatot kérek</button>
@@ -165,9 +159,9 @@
             </div>
           </article>
 
-          <article class="product-card" data-name="Multifunkciós szerszámkészlet szerszamkeszlet szerszám készlet">
-            <div class="product-badge new">Új</div>
-            <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&w=1000&q=80" alt="Multifunkciós szerszámkészlet" />
+          <article class="product-card" data-name="Multifunkciós szerszámkészlet szerszám készlet">
+            <div class="badge badge-new">Új</div>
+            <img src="assets/szerszamkeszlet.svg" alt="Multifunkciós szerszámkészlet" />
             <div class="product-body">
               <h3>Multifunkciós szerszámkészlet</h3>
               <p>Otthonra, autóba és szereléshez is hasznos alapcsomag kompakt kivitelben.</p>
@@ -175,7 +169,7 @@
                 <span class="price">11 490 Ft</span>
                 <span class="old-price">14 490 Ft</span>
               </div>
-              <div class="ship-note">Szállítás: 2–5 munkanap</div>
+              <span class="ship-note">Szállítás: 2–5 munkanap</span>
               <div class="card-actions">
                 <button class="btn btn-primary order-btn" data-product="Multifunkciós szerszámkészlet">Megrendelem</button>
                 <button class="btn btn-secondary quote-btn" data-product="Multifunkciós szerszámkészlet">Ajánlatot kérek</button>
@@ -188,30 +182,30 @@
       </div>
     </section>
 
-    <section class="section soft" id="elonyok">
+    <section class="section section-soft" id="elonyok">
       <div class="wrap">
         <div class="section-head">
           <div>
-            <p class="section-label">Miért DealZóna?</p>
+            <span class="tag small">Miért DealZóna?</span>
             <h2>Eladásra felépített szerkezet</h2>
           </div>
-          <p class="section-text">Nem csak szép oldal, hanem indulásra kész minta: termékkártyák, rendelési szekció, ajánlatkérés és kapcsolat.</p>
+          <p>Nem csak szép oldal, hanem indulásra kész minta: termékkártyák, rendelési szekció, ajánlatkérés és kapcsolat.</p>
         </div>
 
         <div class="feature-grid">
-          <div class="feature">
+          <div class="feature-card">
             <h3>Bizalomépítő kinézet</h3>
             <p>Modern fejléc, erős nyitó rész és letisztult termékkártyák.</p>
           </div>
-          <div class="feature">
+          <div class="feature-card">
             <h3>Rendelésre beszerzéshez jó</h3>
             <p>Nem kell teljes webshop motorral indulni, már ezzel is lehet tesztelni az érdeklődést.</p>
           </div>
-          <div class="feature">
+          <div class="feature-card">
             <h3>Ajánlatkérés is van</h3>
             <p>Akinek még kérdése van, nem vész el – tud írni neked közvetlenül.</p>
           </div>
-          <div class="feature">
+          <div class="feature-card">
             <h3>Mobilbarát</h3>
             <p>Telefonon is jól néz ki, ami a legtöbb vevőnél alapelvárás.</p>
           </div>
@@ -220,18 +214,30 @@
     </section>
 
     <section class="section" id="rendeles">
-      <div class="wrap form-grid">
-        <div>
-          <p class="section-label">Rendelés</p>
+      <div class="wrap order-grid">
+        <div class="order-info">
+          <span class="tag small">Rendelés</span>
           <h2>Gyors rendelési / ajánlatkérő űrlap</h2>
-          <p class="section-text">
+          <p>
             Ez a verzió már nem csak látszat-visszajelzést ad: a küldés után megnyit egy előkészített e-mailt a látogató levelezőjében.
             GitHub Pages alatt ez használhatóbb, mint egy kamu elküldés.
           </p>
 
           <div class="info-box">
             <strong>Fontos:</strong>
-            <span>A <b>cél e-mail címet</b> állítsd át a <b>script.js</b> fájlban a sajátodra. Most mintacím van benne.</span>
+            <span>A cél e-mail címet állítsd át a <b>script.js</b> fájlban a sajátodra.</span>
+          </div>
+
+          <div class="steps">
+            <div class="step"><b>1.</b><span>A vevő kiválasztja a terméket.</span></div>
+            <div class="step"><b>2.</b><span>Kitölti az űrlapot vagy ajánlatot kér.</span></div>
+            <div class="step"><b>3.</b><span>Te megrendeled a terméket és továbbadod haszonnal.</span></div>
+          </div>
+
+          <div class="contact-box">
+            <h3>Kapcsolat</h3>
+            <a href="mailto:sajat@email.hu">✉️ sajat@email.hu</a>
+            <a href="tel:+36300000000">📞 +36 30 000 0000</a>
           </div>
         </div>
 

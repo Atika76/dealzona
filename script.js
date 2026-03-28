@@ -4,6 +4,10 @@ const productInput = document.getElementById('product');
 const formMessage = document.getElementById('formMessage');
 const menuToggle = document.getElementById('menuToggle');
 const mainMenu = document.getElementById('mainMenu');
+const searchInput = document.getElementById('productSearch');
+const productCards = [...document.querySelectorAll('.product-card')];
+const productCount = document.getElementById('productCount');
+const emptyState = document.getElementById('emptyState');
 
 document.querySelectorAll('.order-btn, .quote-btn').forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -16,8 +20,7 @@ document.querySelectorAll('.order-btn, .quote-btn').forEach((btn) => {
 if (menuToggle && mainMenu) {
   menuToggle.addEventListener('click', () => {
     mainMenu.classList.toggle('show');
-    const expanded = mainMenu.classList.contains('show');
-    menuToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    menuToggle.setAttribute('aria-expanded', mainMenu.classList.contains('show') ? 'true' : 'false');
   });
 
   mainMenu.querySelectorAll('a').forEach((link) => {
@@ -27,11 +30,6 @@ if (menuToggle && mainMenu) {
     });
   });
 }
-
-const searchInput = document.getElementById('productSearch');
-const productCards = [...document.querySelectorAll('.product-card')];
-const productCount = document.getElementById('productCount');
-const emptyState = document.getElementById('emptyState');
 
 function updateProductFilter() {
   const q = (searchInput.value || '').toLowerCase().trim();
@@ -48,9 +46,7 @@ function updateProductFilter() {
   emptyState.classList.toggle('hidden', visible !== 0);
 }
 
-if (searchInput) {
-  searchInput.addEventListener('input', updateProductFilter);
-}
+if (searchInput) searchInput.addEventListener('input', updateProductFilter);
 
 document.getElementById('orderForm').addEventListener('submit', (e) => {
   e.preventDefault();
@@ -63,21 +59,19 @@ document.getElementById('orderForm').addEventListener('submit', (e) => {
 
   if (!name || !phone) {
     formMessage.textContent = 'Kérlek add meg a nevedet és a telefonszámodat.';
-    formMessage.style.color = '#d84a16';
+    formMessage.style.color = '#df5c1a';
     return;
   }
 
   const subject = encodeURIComponent(`DealZóna rendelés / érdeklődés - ${product || 'új kérés'}`);
-  const body = encodeURIComponent(
-`Név: ${name}
+  const body = encodeURIComponent(`Név: ${name}
 Telefonszám: ${phone}
 E-mail: ${email || '-'}
 Termék: ${product || '-'}
-Üzenet: ${message || '-'}`
-  );
+Üzenet: ${message || '-'}`);
 
   formMessage.textContent = 'Megnyitjuk az e-mailt a kitöltött adatokkal...';
-  formMessage.style.color = '#0e8f66';
+  formMessage.style.color = '#0f8c67';
 
   window.location.href = `mailto:${TARGET_EMAIL}?subject=${subject}&body=${body}`;
 });
